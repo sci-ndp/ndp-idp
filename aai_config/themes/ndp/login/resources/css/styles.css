@@ -1,0 +1,264 @@
+.pf-v5-c-login__container {
+    grid-template-areas: "main";
+    grid-template-columns: 34rem;
+}
+
+#kc-header-wrapper {
+    padding-top: 70px;
+    /* Adjust padding as needed */
+    position: relative;
+    /* Change to relative if it works better with your layout */
+    width: 100%;
+    /* Ensure it takes the full width */
+    max-width: 1200px;
+    /* Example max-width to contain the layout on very wide screens */
+    margin: 0 auto;
+    /* Adjust bottom margin to 20px */
+    box-sizing: border-box;
+    /* Include padding in the element's total width and height */
+}
+
+.pf-v5-c-login__container {
+    grid-template-areas: "main";
+    grid-template-columns: 34rem;
+    margin-top: 0px;
+    /* Ensure top margin is 20px if adjusting this element instead */
+    padding-top: 0px;
+    padding-bottom: 90px;
+}
+
+.login-pf body {
+    /* background: url("../img/ndp-landing-image.png") no-repeat center center fixed; */
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.04);
+    height: 100%;
+}
+
+div.kc-logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Add this line to allow logos to wrap */
+    margin: 0 auto;
+    gap: 20px;
+    /* This property creates space between flex items; adjust as needed */
+}
+
+.pf-v5-c-login {
+    align-items: flex-start !important;
+    min-height: auto !important;
+}
+
+div.kc-logo-text .logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* Adjust as needed; 'contain' ensures the image is fully visible */
+}
+
+#logo1 {
+    height: 39px;
+    /* Height for the first logo */
+    width: 147px;
+    /* Width for the first logo */
+    background-image: url(../img/ndp_logo.png);
+    /* Additional styling as needed */
+}
+
+#logo2 {
+    margin-left: 100px;
+    height: 100px;
+    /* Height for the second logo */
+    width: 100px;
+    /* Width for the second logo */
+    background-image: url(../img/nsf-logo.png);
+    /* Additional styling as needed */
+}
+
+div.kc-logo-text span {
+    display: none;
+}
+
+.pf-v5-c-button.pf-m-primary {
+    color: white;
+    background-color: #0039a7 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+.pf-v5-c-button.pf-m-primary:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
+    background-color: #022f89 !important;
+}
+
+
+.ndp-footer {
+    position: fixed;
+    /* Fix position to the bottom of the viewport */
+    bottom: 0;
+    /* Align to bottom */
+    left: 0;
+    /* Align to left side */
+    width: 100%;
+    /* Span the full width of the viewport */
+    background-color: #081444;
+    /* Dark blue color */
+    color: #ffffff;
+    /* White text color */
+    padding: 20px 0;
+    /* Padding for the footer */
+    font-family: Arial, sans-serif;
+    /* Example font */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    /* Ensure it sits above other content */
+    height: 90px;
+}
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.footer-logo {
+    /* Add your NSF logo background here */
+    background-image: url('../img/ndp_logo.png');
+    /* Example path to your NSF logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    /* Adjust based on your logo */
+    width: 157px;
+    /* Adjust based on your logo */
+}
+
+.footer-logo2 {
+    /* Add your NSF logo background here */
+    background-image: url('../img/nsf-logo.png');
+    /* Example path to your NSF logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 14px;
+    /* Adjust as needed */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Aligns the social icons to the right */
+    padding-right: 20px;
+    /* Adds padding to the right of the social icons container */
+}
+
+.footer-social a {
+    color: white;
+    /* Sets the color of the links to white */
+    margin-left: 10px;
+    /* Adds space between the icons */
+    text-decoration: none;
+    /* Removes underline from links */
+}
+
+.footer-social a svg {
+    fill: currentColor;
+    /* SVG fill uses the color of the parent element, which is white */
+}
+
+.social-icon {
+    color: white !important;
+}
+
+.social-icon:hover {
+    color: gray !important;
+}
+
+@media (max-width: 1000px) {
+    .ndp-footer {
+        height: 200px;
+    }
+
+    .pf-v5-c-login__container {
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width: 750px) {
+    .alpha-version-banner {
+        height: 80px !important;
+    }
+
+    #kc-header-wrapper {
+        padding-top: 100px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .ndp-footer {
+        display: none !important;
+    }
+
+    .pf-v5-c-login__container {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-social {
+        margin-bottom: 20px;
+        /* Ensure there's space between the items when they stack */
+    }
+}
+
+
+
+.alpha-version-banner {
+    background-color: #d17d0f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 0;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 18px;
+}
+
+.alpha-version-banner a {
+    color: white;
+    text-decoration: underline;
+}
+
+.alpha-version-banner a:hover {
+    color: #0039a7;
+}

@@ -1,0 +1,281 @@
+/* Globals */
+.brand {
+  height: 35px;
+}
+
+.pf-c-page__sidebar {
+  background: #e2e8f0 !important;
+}
+
+.pf-c-nav__link {
+  background: #0039a7;
+}
+
+.pf-c-nav__link:focus {
+  background: #0039a7;
+}
+
+.pf-m-current {
+  background: #001642 !important;
+}
+
+.pf-c-nav__link:hover {
+  background: #034de1 !important;
+}
+
+/* .pf-u-pl-0::after {
+  color: #0066cc !important; 
+  background: white;
+  content: "Account console"; 
+}
+
+
+
+.pf-u-pl-0::after:hover {
+  color: #0066cc !important; 
+  text-decoration: underline !important;
+} */
+
+.pf-u-pl-0 {
+  color: #0066cc !important; 
+  background: white !important; 
+}
+
+.pf-u-pl-0:hover {
+  color: white !important; 
+  background: white !important; 
+}
+
+
+#application-toggle-account-console,
+#refresh-page,
+#otp-set-up:hover,
+#password-update-785216c2:hover {
+  background-color: white !important;
+}
+
+
+.pf-c-nav__subnav {
+  padding: 0px !important;
+  padding-left: 10px !important;
+}
+
+#nav-toggle {
+  background-color: grey !important;
+}
+
+#nav-toggle svg:hover {
+  background-color: grey !important;
+}
+
+.pf-c-button {
+  color: white;
+  background-color: #0039a7;
+}
+
+.pf-c-page__header {
+  color: #76839D !important;
+}
+
+.pf-c-button:hover {
+  cursor: pointer;
+  text-decoration: underline !important;
+  background-color: #022f89 !important;
+}
+
+#cancel-btn {
+  color: white;
+  background-color: #d25000;
+}
+
+#cancel-btn:hover {
+  color: white;
+  background-color: #af2c01 !important;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("${resourceUrl}/img/ndp_logo.png");
+}
+
+.brand-logo img {
+  max-height: 50px; /* Adjust as needed */
+  max-width: 100%; /* Adjust as needed */
+  margin: 0 10px; /* Gives space between logos */
+}
+
+.brand-logo a img {
+  max-height: 50px; /* Adjust as needed */
+  max-width: 100%; /* Adjust as needed */
+  margin: 0 10px; /* Gives space between logos */
+}
+
+
+.delete-button {
+  width: 150px;
+  height: 50px;
+}
+
+@media (max-width: 320px) {
+  .delete-button {
+    width: 120px;
+    height: 50px;
+  }
+}
+
+/* Account Page screen */
+.personal-info-form .pf-c-form__group-control {
+  max-width: 600px;
+}
+
+/* Device Activity screen */
+.signed-in-device-list .pf-c-data-list__item-row {
+  --pf-c-data-list__item-row--PaddingRight: 0;
+  --pf-c-data-list__item-row--PaddingLeft: 0;
+}
+
+.signed-in-device-list .pf-c-data-list__expandable-content-body {
+  --pf-c-data-list__expandable-content-body--PaddingRight: 0;
+}
+
+.signed-in-device-grid {
+  grid-template-columns: auto repeat(11, [col-start] 1fr);
+}
+
+.signed-in-device-list.pf-c-data-list {
+  --pf-c-data-list--sm--BorderTopWidth: 0;
+}
+
+.pf-c-data-list__item {
+  --pf-c-data-list__item--BorderBottomWidth: 1px;
+  --pf-c-data-list__item--BorderBottomColor: var(--pf-global--BorderColor--100);
+}
+
+.signed-in-device-list.pf-c-data-list {
+  --pf-c-data-list--BorderTopWidth: 0;
+}
+
+@media (min-width: 576px) {
+  .pf-c-data-list__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pf-c-data-list__item--BackgroundColor);
+    border-bottom: var(--pf-c-data-list__item--BorderBottomWidth) solid var(--pf-c-data-list__item--BorderBottomColor);
+  }
+
+  .signed-in-device-list.pf-c-data-list {
+    --pf-c-data-list--BorderTopWidth: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .signed-in-device-list .pf-c-description-list {
+    --pf-c-description-list--GridTemplateColumns--count: 5;
+  }
+}
+
+/* Signing in screen */
+.title-case:first-letter,
+.cred-title:first-letter,
+#otp-not-set-up .pf-c-empty-state__body:first-letter {
+  text-transform: capitalize
+}
+
+/* Applications screen */
+#applications-list-header .pf-c-data-list__item-content {
+  --pf-c-data-list__item-content--md--PaddingBottom: 1rem;
+}
+
+.pf-u-pl-35xl {
+  padding-left: 4.5rem;
+}
+
+
+.ndp-footer {
+  position: fixed; /* Fix position to the bottom of the viewport */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left side */
+  width: 100%; /* Span the full width of the viewport */
+  background-color: #081444; /* Dark blue color */
+  color: #ffffff; /* White text color */
+  padding: 20px 0; /* Padding for the footer */
+  font-family: Arial, sans-serif; /* Example font */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10; /* Ensure it sits above other content */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.footer-logo {
+  /* Add your NSF logo background here */
+  background-image: url('../img/ndp_logo.png'); /* Example path to your NSF logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px; /* Adjust based on your logo */
+  width: 157px; /* Adjust based on your logo */
+}
+
+.footer-logo2 {
+  /* Add your NSF logo background here */
+  background-image: url('../img/nsf-logo.png'); /* Example path to your NSF logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 14px; /* Adjust as needed */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns the social icons to the right */
+  padding-right: 20px; /* Adds padding to the right of the social icons container */
+}
+
+.footer-social a {
+  color: white; /* Sets the color of the links to white */
+  margin-left: 10px; /* Adds space between the icons */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer-social a svg {
+  fill: currentColor; /* SVG fill uses the color of the parent element, which is white */
+}
+
+.social-icon {
+  color: white !important;
+}
+
+.social-icon:hover {
+  color: gray !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-logo, .footer-social {
+      margin-bottom: 20px; /* Ensure there's space between the items when they stack */
+  }
+}
